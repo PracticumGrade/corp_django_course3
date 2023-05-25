@@ -1,0 +1,745 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add категория",
+        "content_type": 7,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change категория",
+        "content_type": 7,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete категория",
+        "content_type": 7,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view категория",
+        "content_type": 7,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add курс",
+        "content_type": 8,
+        "codename": "add_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change курс",
+        "content_type": 8,
+        "codename": "change_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete курс",
+        "content_type": 8,
+        "codename": "delete_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view курс",
+        "content_type": 8,
+        "codename": "view_course"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add урок",
+        "content_type": 9,
+        "codename": "add_lesson"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change урок",
+        "content_type": 9,
+        "codename": "change_lesson"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete урок",
+        "content_type": 9,
+        "codename": "delete_lesson"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view урок",
+        "content_type": 9,
+        "codename": "view_lesson"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$XvXMcdpLPnbcVdQfoXq2oN$mg/HYfXnV5zS6Vg/lKls4mnQoYpbjemQ4f1kwT1svA4=",
+        "last_login": "2023-04-17T14:09:12.302Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-04-17T13:37:04.925Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$hPke64CnMQtDLZbuN55JOu$LZR3KaViTI9iHeIk+Xcr//0JLgrGYVvIC5V/YFYRMwI=",
+        "last_login": "2023-04-17T14:36:40.463Z",
+        "is_superuser": false,
+        "username": "author",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-04-17T13:38:02Z",
+        "groups": [],
+        "user_permissions": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36
+        ]
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "courses",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "courses",
+        "model": "course"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "lessons",
+        "model": "lesson"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gka7wvdkwpbj4mkx6ryeb75k493ie3cb",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyHAViwevfcbyC4sUjWQlPZk_Hdp0oNmkjnMm5m38Lit2W-NFz9HcRVGnH4zwvDksoP4wHKvMtSyLjPJvSIP2uRUI79uR_fvIGPLfZ3imWk07ICUJiSA1GWdCsqyjSkAXkxC0NoN3SOqQDCwQw4azAji8wUDZzhz:1poPyC:WRLSHJ50U8-YUjhyjtm-3zy22mi7h-IErnzXOulifQM",
+        "expire_date": "2023-05-01T14:36:40.465Z"
+    }
+},
+{
+    "model": "courses.category",
+    "pk": 1,
+    "fields": {
+        "title": "Основы программирования",
+        "description": "Курс по основам программирования на языке Python",
+        "slug": "osnovy-programmirovaniya",
+        "created_at": "2023-04-17T13:37:25.058Z"
+    }
+},
+{
+    "model": "courses.category",
+    "pk": 2,
+    "fields": {
+        "title": "Веб-разработка",
+        "description": "Курс по веб-разработке с использованием Django",
+        "slug": "web-razrabotka",
+        "created_at": "2023-04-17T13:37:25.063Z"
+    }
+},
+{
+    "model": "courses.category",
+    "pk": 3,
+    "fields": {
+        "title": "Мобильная разработка",
+        "description": "Курс по разработке мобильных приложений",
+        "slug": "mobilnaya-razrabotka",
+        "created_at": "2023-04-17T13:37:25.066Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+        "title": "Python для начинающих",
+        "description": "Курс по основам программирования на языке Python",
+        "author": 1,
+        "category": 1,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.903Z",
+        "updated_at": "2023-04-17T13:40:49.903Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+        "title": "Django для веб-разработки",
+        "description": "Курс по веб-разработке с использованием Django",
+        "author": 1,
+        "category": 2,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.908Z",
+        "updated_at": "2023-04-17T13:40:49.908Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+        "title": "ООП в Java",
+        "description": "Курс по объектно-ориентированному программированию на языке Java",
+        "author": 2,
+        "category": 1,
+        "is_public": false,
+        "created_at": "2023-04-17T13:40:49.911Z",
+        "updated_at": "2023-04-17T13:40:49.911Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+        "title": "JavaScript для начинающих",
+        "description": "Курс по основам программирования на языке JavaScript",
+        "author": 2,
+        "category": 2,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.915Z",
+        "updated_at": "2023-04-17T13:40:49.915Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+        "title": "React для веб-разработки",
+        "description": "Курс по веб-разработке с использованием React",
+        "author": 1,
+        "category": 2,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.918Z",
+        "updated_at": "2023-04-17T13:40:49.918Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 6,
+    "fields": {
+        "title": "Кросс-платформенные мобильных приложения на React Native",
+        "description": "Создание кросс-платформенных мобильных приложений на React Native",
+        "author": 2,
+        "category": 3,
+        "is_public": false,
+        "created_at": "2023-04-17T13:40:49.921Z",
+        "updated_at": "2023-04-17T13:40:49.921Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 7,
+    "fields": {
+        "title": "Алгоритмы и структуры данных на Python",
+        "description": "Курс по алгоритмам и структурам данных на языке Python",
+        "author": 2,
+        "category": 1,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.925Z",
+        "updated_at": "2023-04-17T13:40:49.925Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 8,
+    "fields": {
+        "title": "Алгоритмы и структуры данных на Java",
+        "description": "Курс по алгоритмам и структурам данных на языке Java",
+        "author": 2,
+        "category": 1,
+        "is_public": false,
+        "created_at": "2023-04-17T13:40:49.928Z",
+        "updated_at": "2023-04-17T13:40:49.929Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 9,
+    "fields": {
+        "title": "Kotlin для разработки мобильных приложений под Android",
+        "description": "Курс по программированию на Kotlin для разработки мобильных приложений под Android",
+        "author": 2,
+        "category": 3,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.932Z",
+        "updated_at": "2023-04-17T13:40:49.932Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 10,
+    "fields": {
+        "title": "Веб-дизайн с HTML и CSS",
+        "description": "Курс по веб-дизайну с использованием HTML и CSS",
+        "author": 1,
+        "category": 2,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.935Z",
+        "updated_at": "2023-04-17T13:40:49.935Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 11,
+    "fields": {
+        "title": "Python для продвинутых",
+        "description": "Курс по продвинутому программированию на языке Python",
+        "author": 1,
+        "category": 1,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.937Z",
+        "updated_at": "2023-04-17T13:40:49.937Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 12,
+    "fields": {
+        "title": "SQL для баз данных",
+        "description": "Курс по языку SQL и работе с базами данных",
+        "author": 1,
+        "category": 2,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.940Z",
+        "updated_at": "2023-04-17T13:40:49.940Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 13,
+    "fields": {
+        "title": "Разработка мобильных приложений на iOS с использованием Swift",
+        "description": "Курс по разработке мобильных приложений на iOS с использованием Swift",
+        "author": 2,
+        "category": 3,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.943Z",
+        "updated_at": "2023-04-17T13:40:49.943Z"
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 14,
+    "fields": {
+        "title": "Анализ данных в Python",
+        "description": "Курс по анализу данных на языке Python",
+        "author": 2,
+        "category": 1,
+        "is_public": true,
+        "created_at": "2023-04-17T13:40:49.946Z",
+        "updated_at": "2023-04-17T13:40:49.946Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 1,
+    "fields": {
+        "title": "Урок 1. Введение в программирование",
+        "text": "В этом уроке мы рассмотрим основы программирования",
+        "type": "theory",
+        "duration": 60,
+        "course": 1,
+        "created_at": "2023-04-17T14:00:19.017Z",
+        "updated_at": "2023-04-17T14:00:19.017Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 2,
+    "fields": {
+        "title": "Урок 2. Основы языка Python",
+        "text": "В этом уроке мы рассмотрим основные конструкции языка Python",
+        "type": "edu",
+        "duration": 120,
+        "course": 1,
+        "created_at": "2023-04-17T14:01:12.003Z",
+        "updated_at": "2023-04-17T14:01:12.003Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 3,
+    "fields": {
+        "title": "Урок 1. Введение в iOS разработку",
+        "text": "В этом уроке мы рассмотрим основы iOS разработки",
+        "type": "theory",
+        "duration": 90,
+        "course": 13,
+        "created_at": "2023-04-17T14:01:51.045Z",
+        "updated_at": "2023-04-17T14:01:51.045Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 4,
+    "fields": {
+        "title": "Урок 2. Основы Swift",
+        "text": "В этом уроке мы рассмотрим основные конструкции языка Swift",
+        "type": "edu",
+        "duration": 120,
+        "course": 13,
+        "created_at": "2023-04-17T14:02:24.555Z",
+        "updated_at": "2023-04-17T14:07:33.561Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 5,
+    "fields": {
+        "title": "Урок 1. Основы Android разработки",
+        "text": "В этом уроке мы рассмотрим основы Android разработки",
+        "type": "theory",
+        "duration": 90,
+        "course": 9,
+        "created_at": "2023-04-17T14:07:05.115Z",
+        "updated_at": "2023-04-17T14:07:05.115Z"
+    }
+},
+{
+    "model": "lessons.lesson",
+    "pk": 6,
+    "fields": {
+        "title": "Урок 2. Основы Kotlin",
+        "text": "В этом уроке мы рассмотрим основные конструкции языка Kotlin",
+        "type": "edu",
+        "duration": 120,
+        "course": 9,
+        "created_at": "2023-04-17T14:07:51.309Z",
+        "updated_at": "2023-04-17T14:07:51.309Z"
+    }
+}
+]
