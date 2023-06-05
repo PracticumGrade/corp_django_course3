@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for course in page_obj %}
+    <article class="mb-5">
+      {% include "includes/course_card.html" %}
+    </article>
+  {% empty %}
+    <li>Нет доступных курсов.</li>
+  {% endfor %}
+  {% if is_paginated %}
+     {% include "includes/paginator.html" %}
+  {% endif %}
+{% endblock %}

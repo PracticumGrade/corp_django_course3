@@ -1,0 +1,20 @@
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 40rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ course.title }}</h5>
+      {% if course.is_public %}
+        <span class="badge badge-primary">Публичный</span>
+      {% else %}
+        <span class="badge badge-secondary">Приватный</span>
+      {% endif %}
+      <h6 class="card-subtitle mb-2 text-muted">
+        <small>
+          От автора @{{ course.author.username }}<br> в
+          категории {% include "includes/category_link.html" %}
+        </small>
+      </h6>
+      <p class="card-text">{{ course.description|truncatewords:10 }}</p>
+      <a href="{{ course.get_absolute_url }}" class="btn btn-primary">Открыть курс</a>
+    </div>
+  </div>
+</div>
