@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+    <h1 class="mt-4">{{ course.title }}</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <p>{{ course.description }}</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Информация о курсе</h5>
+            <ul class="list-group mb-2">
+                <li class="list-group-item"><strong>Автор:</strong> {{ course.author }}</li>
+                <li class="list-group-item"><strong>Категория:</strong> <a href="{{ course.category.get_absolute_url }}">{{ course.category }}</a></li>
+                <li class="list-group-item">
+                    <strong>Статус:</strong> {% if course.is_public %}Публичный{% else %}Приватный{% endif %}
+                </li>
+            </ul>
+            {% if user.is_authenticated and user == course.author %}
+                <a class="btn btn-outline-primary" href="{% url 'courses:create_lesson' course.pk %}" role="button">Добавить урок</a>
+            {% endif %}
+        </div>
+    </div>
+    <h2 class="mt-4">Уроки:</h2>
+    <div class="row">
+        <div class="col-md-8">
+            {% for lesson in lessons %}
+                <a href="{{ lesson.get_absolute_url }}" class="list-group-item list-group-item-action">{{ lesson.title }}</a>
+            {% empty %}
+                <p class="text-muted">Нет уроков.</p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="list-group">
+
+    </div>
+{% endblock %}

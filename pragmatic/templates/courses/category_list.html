@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+ Категории
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for category in category_list %}
+            <div class="col-md-4">
+              {% include "includes/category_card.html" %}
+            </div>
+        {% empty %}
+            <li>Нет доступных категорий.</li>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

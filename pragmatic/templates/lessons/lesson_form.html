@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+
+{% block title %}
+  {% if "/edit/" in request.path %}
+    Редактировать урок
+  {% else %}
+    Создать урок
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <div class="row justify-content-center">
+        {% if "/edit/" in request.path %}
+          <h1 class="text-center">Редактировать урок</h1>
+        {% else %}
+          <h1 class="text-center">Создать урок</h1>
+        {% endif %}
+          <div class="card col-8">
+            <div class="card-header">
+              Урок
+            </div>
+            <div class="card-body">
+              <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% bootstrap_button button_type="submit" content="Отправить" %}
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+{% endblock content %}

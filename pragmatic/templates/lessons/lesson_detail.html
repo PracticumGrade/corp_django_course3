@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+ Название урока
+{% endblock %}
+{% block content %}
+<h1 class="mt-4">{{ lesson.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <p>{{ lesson.text|linebreaksbr }}</p>
+    </div>
+    <div class="col-md-4">
+        <h5>Информация о уроке</h5>
+        {% if user == lesson.course.author %}
+            <h6 class="card-subtitle mb-2 text-muted">
+                Добавлено: {{ lesson.created_at|date:"d E Y H:i:s" }}<br>
+                Отредактировано: {{ lesson.updated_at|date:"d E Y H:i:s" }}
+            </h6>
+            <a class="btn btn-outline-primary mb-2" href="{% url 'courses:edit_lesson' lesson.course.pk lesson.pk %}" role="button">Редактировать</a>
+            <a class="btn btn-outline-danger mb-2" href="{% url 'courses:delete_lesson' lesson.course.pk lesson.pk %}" role="button">Удалить</a>
+        {% endif %}
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Курс:</strong> <a href="{{ lesson.course.get_absolute_url }}">{{ lesson.course }}</a></li>
+            <li class="list-group-item"><strong>Тип урока:</strong> {{ lesson.get_type_display }}</li>
+            <li class="list-group-item"><strong>Продолжительность:</strong> {{ lesson.duration }} мин.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

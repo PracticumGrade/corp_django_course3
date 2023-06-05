@@ -1,0 +1,9 @@
+<div class="col d-flex justify-content-center">
+  <div class="card" style="width: 40rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ category.title }}</h5>
+      <p class="card-text">{{ category.description|linebreaksbr }}</p>
+      <a href="{{ category.get_absolute_url }}" class="btn btn-primary">Посмотреть курсы</a>
+    </div>
+  </div>
+</div>

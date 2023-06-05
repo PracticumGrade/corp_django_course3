@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}
+  Страница пользователя {{ profile }}
+{% endblock %}
+{% block content %}
+  <h1 class="mb-5 text-center ">Страница пользователя {{ profile }}</h1>
+  <small>
+    <ul class="list-group list-group-horizontal justify-content-center mb-3">
+      <li class="list-group-item text-muted">Имя пользователя: {% if profile.get_full_name %}{{ profile.get_full_name }}{% else %}не указано{% endif %}</li>
+      <li class="list-group-item text-muted">Регистрация: {{ profile.date_joined }}</li>
+      <li class="list-group-item text-muted">Роль: {% if profile.is_staff %}Админ{% else %}Пользователь{% endif %}</li>
+    </ul>
+    <ul class="list-group list-group-horizontal justify-content-center">
+      {% if user.is_authenticated and request.user == profile %}
+        <a class="btn btn-sm text-muted" href="{% url 'password_change' %}">Изменить пароль</a>
+      {% endif %}
+    </ul>
+  </small>
+  <br>
+  <h3 class="mb-5 text-center">Курсы пользователя</h3>
+  <h4 class="mb-5 text-center">
+    {% for course_count in courses_count %}
+        {% if course_count.is_public %}Публичных{% else %}Приватных{% endif %} курсов: {{ course_count.count }}<br>
+    {% endfor %}
+  </h4>
+  <div class="list-group">
+    {% for course in courses %}
+      <a href="{{ course.get_absolute_url }}" class="list-group-item">
+          {{ course.title }}
+      </a>
+    {% empty %}
+      <li>Нет доступных курсов.</li>
+    {% endfor %}
+  </div>
+{% endblock %}
